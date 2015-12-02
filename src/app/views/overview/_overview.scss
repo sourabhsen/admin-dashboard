@@ -1,0 +1,31 @@
+.site-header {
+  .site-tag {
+    font-size: 21px;
+    color: $gray-dark;
+  }
+  strong {
+    font-size: 21px;
+    color: $black;
+  }
+  .ov-user {
+    margin-top: 23px;
+    a {
+      float:right;
+    }
+  }
+  ul.dropdown-menu li a {
+    cursor: pointer;
+  }
+
+  .ten-two{
+    .primary{
+      padding-left:0px;
+    }
+    .secondary{
+      padding-right:0px;
+    }
+  }
+
+}
+
+

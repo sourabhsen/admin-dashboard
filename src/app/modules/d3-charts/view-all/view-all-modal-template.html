@@ -1,0 +1,20 @@
+<div class="modal-wrapper">
+  <a class="modal-close-link" ng-click="closeThisDialog()" title="Close"><i class="icon"></i></a>
+  <div class="modal-rule"></div>
+  <div class="one-col container-full">
+    <div class="row">
+      <div class="col" cg-busy="ctrl.graphPromise">
+        <d3-chart id="{{ctrl.id}}" config="ctrl.modalConfig">
+         <d3-chart-header></d3-chart-header>
+         <br/>
+          <div style="display:none">
+            <d3-chart-query></d3-chart-query>
+          </div>
+          <!-- <d3-chart-search></d3-chart-search> -->
+          <d3-horizontal-bar-modal></d3-horizontal-bar-modal>
+          <d3-chart-footer></d3-chart-footer>
+        </d3-chart>
+      </div>
+    </div>
+  </div>
+</div>

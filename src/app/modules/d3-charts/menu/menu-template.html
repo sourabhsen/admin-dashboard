@@ -1,0 +1,13 @@
+<div dropdown class="secondary ch-menu">
+ 	<a href id="dropdownId" dropdown-toggle><i class="fa fa-chevron-down pull-right">&nbsp;</i></a>
+	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownId">
+	    <li ng-repeat="item in menu" ng-class="{'dropdown-submenu' : item.menu, 'disabled' : item.disabled}">
+	      <a  href="{{item.action}}">{{item.title}}</a>
+	      <ul ng-if="item.menu" class="dropdown-menu" >
+	      	<li ng-repeat="subitem in item.menu">
+	      		<a href="{{subitem.action}}">{{subitem.title}}</a>
+	      	</li>
+	      </ul>
+	    </li>
+	 </ul>
+</div>

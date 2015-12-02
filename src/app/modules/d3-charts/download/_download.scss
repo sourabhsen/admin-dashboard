@@ -1,0 +1,27 @@
+.ch-download {
+  float:right;
+  margin: 0 0 0 7.5px;
+}
+
+.ch-download-popover{
+  h3{
+    margin:10px 0 10px 15px;
+  }
+
+  select{
+		width:50%;
+	}
+}
+
+.ns-popover-download-theme {
+	box-sizing: border-box;
+	border: solid 5px #D5D6D2;
+	z-index: 999;
+	background: $popover-bg;
+}
+
+.ch-download-popover-actions{
+  button {
+    width: 80%;
+  }
+}

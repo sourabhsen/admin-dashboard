@@ -1,0 +1,50 @@
+<div class="modal-wrapper">
+  <h2>Search Results</h2>
+  <a class="modal-close-link" ng-click="closeThisDialog()" title="Close"><i class="icon"></i></a>
+  <div class="one-col" cg-busy="ctrl.searchModalLoader">
+
+    <div ng-if="data.rowItem.message" class="container-full text-center">
+      <div class="row">
+        <div ng-bind-html="data.rowItem.message"></div>
+      </div>
+    </div>
+
+    <div class="container-full" ng-if="data.rowItem.length > 0">
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Rank</th>
+              <th>{{ctrl.searchtitle}}</th>
+              <th>Frequency</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in data.rowItem">
+              <td>{{row.rank || "N/A"}}</td>
+
+              <td ng-if="row.smarterName">{{row.skillName || "N/A"}}</td>
+              <td ng-if="row.skillName">{{row.skillName || "N/A"}}</td>
+              <td ng-if="row.companyName">{{row.companyName || "N/A"}}</td>
+              <td ng-if="row.jobTitle">{{row.jobTitle || "N/A"}}</td>
+              <td ng-if="row.location">{{row.location || "N/A"}}</td>
+              <td ng-if="row.goal">{{row.goal || "N/A"}}</td>
+
+              <td>
+                <progressbar class="{{themeClass}}" type="{{themeClass}}" animate="true" max="row.count" value="row.count"><b style="color: black">{{row.count}}</b></progressbar>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-left">
+          <span>Total records :</span>
+          <span class="textual-value">{{data.totalCount | number:0}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.red-alert-modal {
+  .d3-chart-message {
+    margin-top: 24px;
+  }
+  ul {
+    list-style: none;
+    max-height: 60vh;
+    overflow-y: auto;
+    li {
+      margin: 18px 0;
+    }
+  }
+}

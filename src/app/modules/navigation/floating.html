@@ -1,0 +1,11 @@
+<div id="floating-nav" class="animate-show" ng-controller="Navigation as nav" ng-mouseover="nav.sendStatus('nav-expand')" ng-mouseleave="nav.sendStatus('nav-collapse')" ng-class="app.status">
+
+  <ul>
+    <li ng-repeat="menu in nav.navigation">
+    	<a ui-sref="{{menu.appUrl}}" ui-sref-active="active" class="{{menu.style}}">
+        	<span class="icon-container"><span class="icon"></span></span>
+          <span class="item-title"> {{menu.title}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

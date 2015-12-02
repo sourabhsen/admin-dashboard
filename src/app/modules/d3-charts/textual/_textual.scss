@@ -1,0 +1,17 @@
+.d3-chart-textual{
+  display: block;
+  width:100%;
+  height: 100%;
+
+  .textual-holder {
+    line-height:1.1;
+    font-size:12px;
+
+    .textual-label{
+      font-weight:400;
+    }
+    .textual-value{
+      font-weight:800;
+    }
+  }
+}

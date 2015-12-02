@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<status>
+  <groups>
+    <properties>
+      <app.artifact>@@appArtifact@@</app.artifact>
+      <app.name>@@appDisplayName@@</app.name>
+      <app.version>@@appVersion@@-@@git_revision_number@@</app.version>
+      <build.date>@@BUILD_ID@@</build.date>
+      <build.user>jenkins</build.user>
+      <jenkins.build>@@BUILD_NUMBER@@</jenkins.build>
+      <jenkins.build.url>@@BUILD_URL@@</jenkins.build.url>
+      <jenkins.git.revision>@@git_revision_number@@</jenkins.git.revision>
+      <jenkins.url>@@JENKINS_URL@@</jenkins.url>
+    </properties>
+    <name>Build Properties</name>
+  </groups>
+</status>

@@ -1,0 +1,37 @@
+[
+    {
+        "metricName": "Goals",
+        "count": 10.23,
+        "change" : 2,
+        "changedirection" : "up",
+        "diff"  : 12
+    },
+    {
+        "metricName": "Job Apply",
+        "count": 183.43,
+        "change" : 2,
+        "changedirection" : "up",
+        "diff"  : 12
+    },
+    {
+        "metricName": "Job Search",
+        "count": 202,
+        "change" : 2,
+        "changedirection" : "down",
+        "diff"  : 12
+    },
+    {
+        "metricName": "Resumes",
+        "count": 2,
+        "change" : 2,
+        "changedirection" : "down",
+        "diff"  : 12
+    },
+    {
+        "metricName": "User Skill",
+        "count": 50,
+        "change" : 2,
+        "changedirection" : "up",
+        "diff"  : 12
+    }
+]

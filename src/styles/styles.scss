@@ -1,0 +1,27 @@
+// This is the main source config for all styles to be added w/ @import
+@import url('//fonts.googleapis.com/css?family=Open+Sans:700,300,600,400');
+/* this import does not work in node sass - https://github.com/sass/libsass/issues/367 */
+@import "custom_variables";
+@import "bootstrap";
+@import "glyphicons";
+@import "sprite";
+@import "layouts";
+@import "main";
+
+// bower .scsss
+@import "../../bower_components/nsPopover/sass/ns-popover.scss";
+
+// component style
+@import "../app/components/red-alert/red-alert";
+@import "../app/components/global-filters/global-filters";
+
+// module styles
+@import "../app/modules/d3-charts/chart/chart";
+@import "../app/modules/primary-metrics/primary-metrics";
+
+// module navigation
+@import "../app/modules/navigation/floating";
+
+// views
+@import "../app/views/overview/overview";
+@import "../app/views/login/login";

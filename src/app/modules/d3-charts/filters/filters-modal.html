@@ -1,0 +1,51 @@
+<div class="modal-wrapper">
+  <h2>Filter</h2>
+  <a class="modal-close-link" ng-click="closeThisDialog()" title="Close"><i class="icon"></i></a>
+  <div class="one-col">
+    <div class="row">
+      <div class="col">
+        <div class="container-full" ng-class="::{'four-col' : !ctrl.config.filters.optional, 'five-col': ctrl.config.filters.optional}">
+          <div class="row">
+            <div class="col" ng-repeat="filter in ctrl.config.filters.data track by $index">
+              <!-- DEFAULT FILTERS -->
+                <div class="checkbox-header">
+                  <input type="checkbox" checklist-model="filter.titles" checklist-value="filter.title" ng-attr-id="{{filter.param}}" ng-click="ctrl.checkAll($event)">
+                  {{::filter.title}}
+                </div>
+                <ul class="filter-opt-container">
+                  <li ng-repeat="opt in filter.options">
+                    <div class="checkbox">
+                      <label ng-attr-for="{{opt}}">
+                        <input ng-attr-id="{{opt}}" type="checkbox" checklist-model="filter.selected" checklist-value="opt" ng-click="ctrl.setOutput($event, filter.param, opt)"> {{::opt}}
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+            <!-- OPTIONAL FILTERS -->
+            <div class="col" ng-if="::ctrl.config.filters.optional">
+              <div class="checkbox-header">&nbsp;</div>
+              <ul class="filter-opt-container">
+                 <li ng-repeat="option in ctrl.config.filters.optional track by $index">
+                  <div class="checkbox">
+                    <label ng-attr-for="{{option.param}}">
+                      <input ng-attr-id="{{option.param}}" ng-attr-name="{{option.param}}" type="checkbox" ng-model="option.selected"> {{::option.title}}
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-primary" ng-click="ctrl.updateFilters($event)">Okay</button>
+        <a class="cancel" ng-click="closeThisDialog()">Cancel</a>
+        <a class="clear-all" ng-click="ctrl.clearAll($event)">Clear All</a>
+      </div>
+    </div>
+
+  </div>
+</div>

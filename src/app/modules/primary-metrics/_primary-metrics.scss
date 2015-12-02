@@ -1,0 +1,147 @@
+.icon-job-search-logo{
+  @extend .icon-searchapply;
+}
+.icon-job-apply-logo{
+  @extend .icon-jobs;
+}
+.icon-resumes-logo{
+  @extend .icon-resume;
+}
+.icon-goals-logo{
+  @extend .icon-goals;
+}
+.icon-user-skill-logo{
+  @extend .icon-skills;
+}
+
+.metric-container{
+  margin-top: 10px;
+}
+
+@mixin widget-class($prop, $prop1){
+	background-color:$prop;
+	.metric-widget-footer{
+		background-color:$prop1;
+	}
+}
+
+.metric-widget{
+	color:$white;
+  min-height: 170px;
+  position: relative;
+	&.widget-job-search{
+		@include widget-class($job-search, $job-search-hi);
+	}
+
+	&.widget-job-apply{
+		@include widget-class($job-app, $job-app-hi);
+	}
+
+	&.widget-goals{
+		@include widget-class($goals-metric, $goals-metric-hi);
+	}
+
+	&.widget-user-skill{
+		@include widget-class($skills-metric, $skills-metric-hi);
+	}
+	&.widget-resumes{
+		@include widget-class($resumes-metric, $resumes-metric-hi);
+	}
+
+	.metric-widget-body{
+		padding: 5px 10px 10px 10px;
+
+		.metric-count{
+			font-size:45px;
+			line-height:1;
+			font-weight:100;
+      padding-bottom:10px;
+      min-height: 54px;
+		}
+
+		.metric-widget-header{
+			font-size:$font-size-h5;
+			line-height:1.1;
+			padding:15px 0;
+			font-weight:800;
+		}
+
+		.metric-widget-icon{
+			text-align:center;
+			font-size:45px;
+			line-height:1;
+		}
+
+    .metric-widget-trend{
+
+
+      font-size: $font-size-small;
+      font-weight:100;
+
+      &.no-data{
+        font-size: 11px;
+        font-weight: 400;
+      }
+
+      .comment{
+        em{
+          font-size: 12px;
+          font-weight:600;
+          font-style:normal;
+        }
+
+      }
+
+      .fa-play{
+        font-size:10px;
+      }
+    }
+
+	}
+
+	.metric-widget-footer{
+		color:$black;
+		font-size: 12px;
+    line-height:1.2;
+		padding:5px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    em{
+        font-size: 30px;
+        font-weight:300;
+        font-style:normal;
+      }
+
+	}
+}
+
+.smaller-count{
+  .metric-widget{
+    .metric-count{
+      font-size: 24px;
+      padding-top:7px;
+    }
+  }
+}
+
+.smaller-trend{
+  .metric-widget{
+    .comment{
+      em{
+        font-size: 9px;
+        font-weight:400;
+      }
+    }
+  }
+}
+
+.smaller-unique{
+  .metric-widget{
+    .metric-unique-user{
+      em{
+        font-size: 21px;
+      }
+    }
+  }
+}

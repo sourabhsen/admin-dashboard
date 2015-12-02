@@ -1,0 +1,11 @@
+.ch-view-all-modal {
+  &.ngdialog.ngdialog-theme-default {
+    padding-top: 3vh;
+    padding-bottom: 0;
+    .ngdialog-content {
+      width: 525px;
+    }
+  }
+}
+
+

@@ -1,0 +1,12 @@
+<div class="five-col">
+  <div class="row">
+    <div class="col" ng-repeat="chart in charts">
+      <h3>{{chart.title}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" ng-repeat="chart in charts">
+        <div ng-attr-id="donut-{{$index}}"></div>
+    </div>
+  </div>
+</div>

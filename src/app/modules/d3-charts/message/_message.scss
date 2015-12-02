@@ -1,0 +1,22 @@
+.d3-chart-message {
+  display: block;
+  width:100%;
+  height: 100%;
+  .message-holder {
+    display: table;
+    position: relative;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: 20;
+    .message {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    h3, p {
+        margin: auto 15px;
+    }
+  }
+}

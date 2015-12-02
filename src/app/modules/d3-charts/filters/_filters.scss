@@ -1,0 +1,45 @@
+.ch-filters {
+  float:right;
+}
+
+.ch-filters-modal {
+  
+  &.ngdialog.ngdialog-theme-default {
+    padding-top: 25vh;
+    .ngdialog-content {
+      width: 900px;
+    }
+
+    .checkbox-header{
+      padding-bottom: 10px;
+    }
+
+    .filter-opt-container{
+      border: solid 1px #D5D6D2;
+      padding-left: 10px;
+      height: 350px;
+      overflow: auto;
+    }
+
+    ul, li {
+      list-style: none;
+    }
+
+    .clear-all {
+      float: right;
+      padding-right: 25px;
+    }
+
+    .cancel{
+      float: right;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+  }  
+}
+
+.ch-no-filter {
+  margin-bottom: 24.5px;
+}

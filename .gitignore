@@ -1,0 +1,10 @@
+*.sublime-project
+*.sublime-workspace
+*.sw*
+*~
+.DS_Store
+**/.DS_Store
+/node_modules
+/build
+/dist
+/coverage

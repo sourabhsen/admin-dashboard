@@ -1,0 +1,124 @@
+<main ng-controller="JobsController as ctrl" id="jobs" class="jobs">
+  <article class="one-col">
+    <!-- HEADER -->
+    <div class="row site-header">
+      <div class="col">
+       <header class="ten-two container-full">
+         <div class="row">
+           <div class="primary">
+              <h1 class="site-tag">Career Guidance System Analytics Dashboard<strong>&nbsp;Jobs</strong></h1>
+              <h5>Last updated at {{ctrl.lastRunDate}}</h5>
+           </div>
+           <div class="secondary ov-user">
+            <p>Welcome {{ctrl.name}}<a ui-sref="logout">Logout</a></p>
+           </div>
+         </div>
+       </header>
+      </div>
+    </div>
+    <!-- CONTROL BAR -->
+    <div class="row">
+      <div class="col">
+        <global-filters></global-filters>
+      </div>
+    </div>
+    <!-- JOB SEARCH VOLUME -->
+    <div class="row">
+      <div class="col container-full" cg-busy="ctrl.jobsearchVolumePromise">
+      <d3-chart id="job-search-volume" config="ctrl.jobSearchVolume">
+          <d3-chart-header></d3-chart-header>
+          <d3-chart-query></d3-chart-query>
+          <d3-area></d3-area>
+          <d3-chart-footer></d3-chart-footer>
+        </d3-chart>
+      </div>
+    </div>
+    <!-- JOB SEARCH TOP 20 -->
+    <div class="row">
+      <div class="col container-full">
+        <section class="three-col container-full">
+          <div class="row">
+
+            <div class="col" cg-busy="ctrl.jobsearchTopTitlePromise">
+              <d3-chart id="jobsearch-top-title-hbar" config="ctrl.jobsearchTopByTitle">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+            <div class="col" cg-busy="ctrl.jobsearchTopCompanyPromise">
+              <d3-chart id="jobsearch-top-company-hbar" config="ctrl.jobsearchTopCompanyName">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+            <div class="col" cg-busy="ctrl.jobsearchTopLocationPromise">
+              <d3-chart id="jobsearch-top-location-hbar" config="ctrl.jobsearchTopByLocation">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- JOB APPLICATION VOLUME -->
+    <div class="row">
+      <div class="col container-full" cg-busy="jobApplicationVolumePromise">
+      <d3-chart id="job-application-volume" config="ctrl.jobApplicationVolume">
+          <d3-chart-header></d3-chart-header>
+          <d3-chart-query></d3-chart-query>
+          <d3-area></d3-area>
+          <d3-axis position="left"></d3-axis>
+          <d3-axis position="bottom"></d3-axis>
+          <d3-chart-footer></d3-chart-footer>
+        </d3-chart>
+      </div>
+    </div>
+    <!-- JOB APPLICATION TOP 20 -->
+    <div class="row">
+      <div class="col container-full">
+        <section class="three-col container-full">
+          <div class="row">
+            <div class="col" cg-busy="ctrl.jobapplicationTopTitlePromise">
+              <d3-chart id="jobapplication-top-title-hbar" config="ctrl.jobapplicationTopTitle">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+            <div class="col" cg-busy="ctrl.jobapplicationTopCompanyPromise">
+              <d3-chart id="jobapplication-top-company-hbar" config="ctrl.jobapplicationTopCompanyName">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+            <!-- DONUT CHART -->
+            <div class="col" cg-busy="ctrl.jobapplicationStatusPromise">
+              <d3-chart id="jobapplication-status" config="ctrl.jobapplicationStatus">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-donut-chart></d3-donut-chart>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </article>
+</main>
+

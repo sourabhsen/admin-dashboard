@@ -1,0 +1,20 @@
+
+.d3-donut-chart {
+  text {
+    font-size: 11px;
+  }
+  rect {
+    stroke: none;
+  }
+}
+
+//legendlink
+.legendLink{
+  text{
+    &.view-details{
+      fill: #006fb1;
+      text-decoration: none;
+      cursor:pointer;
+    }
+  }
+}

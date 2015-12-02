@@ -1,0 +1,32 @@
+
+.d3-chart-tooltip{
+  background: #fff;
+  color: #111C24;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.275);
+  background-clip: padding-box;
+  z-index: 1001;
+  position:absolute;
+  padding :10px;
+  font-size:11px;
+  line-height:14px;
+  left:-1000px;
+  top:-1000px;
+  max-width:180px;
+
+  .d3-chart-tip {
+    content:'';
+    position:absolute;
+    width: 0;
+    height: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 15px 15px 0 0;
+    border-color: #fff transparent transparent transparent;
+    bottom:-15px;
+    &.right{
+      transform:rotate(-270deg);
+      -webkit-transform:rotate(-270deg);
+    }
+  }
+
+}

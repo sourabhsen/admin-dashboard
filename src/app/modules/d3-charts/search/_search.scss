@@ -1,0 +1,43 @@
+ .ch-search {
+  .input-group-addon {
+    background: #fff;
+  }
+
+  .dropdown-menu{
+    strong{
+      font-size: inherit;
+    }
+  }
+
+  .form-group{
+    .form-control-feedback{
+      pointer-events: auto;
+      .icon{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.ch-search-modal {
+
+  &.ngdialog.ngdialog-theme-default {
+    padding-top: 25vh;
+    .ngdialog-content {
+      width: 800px;
+      min-height:25vh;
+    }
+  }
+  .progress{
+    border-radius:0px;
+    .progress-bar {
+      transition: width 1s ease-in-out;
+      text-align:right;
+      padding-right:10px;
+      background-color:transparent;
+    }
+  }
+  .table-striped > tbody > tr{
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Analytics dashboard application.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+
+  <!-- bower:css -->
+  <!-- endbower -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:700,300,600,400" type="text/css">
+  <!-- inject:css -->
+  <!-- endinject -->
+
+</head>
+
+
+<body ng-app="admin-dashboard" ng-controller="AppController as app">
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- inject:js -->
+  <!-- endinject -->
+  <div ui-view="navigation"></div>
+  <div ui-view="main" class="container" ng-class="app.status"></div>
+</body>
+</html>

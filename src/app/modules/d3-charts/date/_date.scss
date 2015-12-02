@@ -1,0 +1,181 @@
+// date display on chart
+.ch-date {
+  float:left;
+  button{
+    padding-left:0;
+    color: #007cca;
+  }
+}
+
+// quick picker
+.ns-popover-date-theme {
+  box-sizing: border-box;
+  border:solid 1px $gray-light;
+  z-index: 99;
+  background: $popover-bg;
+  margin-top: 10px;
+}
+
+.ch-date-wrapper {
+  display: inline-block;
+  position: relative;
+   &:after, &:before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $white;
+    top: -10px;
+    content: '';
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+  }
+  &:before {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid;
+    border-bottom-color: $gray-light; /* Can't be included in the shorthand to work */
+    top: -11px;
+    margin-left: -11px;
+  }
+}
+
+.ch-date-quick-pick {
+  margin: 10px;
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    li {
+      margin: 5px 0;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+// modal
+.ch-date-modal {
+  &.ngdialog.ngdialog-theme-default {
+    padding-top: 25vh;
+    .ngdialog-content {
+      width: 755px;
+    }
+    form {
+      label {
+        width: 12%;
+      }
+    }
+  }
+  .ten-two {
+    margin-top: 24px;
+  }
+}
+// datepicker
+.form-inline .form-group.ch-date-form-group {
+  width: 100%;
+  label {
+    width: 12%;
+  }
+  .input-group {
+    width: 85%;
+    .form-control {
+      border-right:0;
+      border-radius: 0;
+      & + .input-group-addon {
+        border-left: 0;
+        border-radius: 0;
+        background: $white;
+      }
+       &:focus {
+        box-shadow: none;
+        & + .input-group-addon {
+          border-color: #66afe9;
+        }
+       }
+    }
+  }
+}
+.ch-datepicker {
+  margin: 5% 0 0 13%;
+  font-size: 14px;
+  .btn-sm.pull-left, .btn-sm.pull-right {
+     background-color: $white;
+  }
+  .btn-default {
+    border: 0px;
+    border-radius: 100%;
+    padding:8px 10px;
+    min-width:0 !important;
+    outline: none;
+    box-shadow: none;
+    &:hover, &:focus, &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+   color: $white;
+   background-color: $white;
+   span {
+    visibility: hidden;
+   }
+  }
+  .btn-info {
+    background-color: $gray-dark;
+    &.active {
+      background-color: $gray-dark;
+    .text-info {
+      color:$white;
+    }
+    }
+  }
+
+  button[id$='title'] {
+    background: $white;
+    font-size: 1em;
+    border-radius: 0;
+    border: none;
+    &:hover, &:focus, &:active {
+      background:$white;
+      border-color: $white;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  i.glyphicon-chevron-right  {
+     @extend .icon-arrow-next;
+     &:before {
+        content: '';
+      }
+  }
+  i.glyphicon-chevron-left {
+    @extend .icon-arrow-back;
+     &:before {
+        content: '';
+      }
+  }
+}
+.ch-date-ok {
+  width: 20%;
+}
+.ch-date-ok, .ch-date-cancel {
+  float:right;
+  margin-right: 15px;
+}
+
+// BOILERPLATE FOR RESPONSIVE BREAKPOINTS
+/* Extra small devices (phones, less than 720px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 720px and up) */
+// @media (min-width: $screen-sm-min) { ... }
+
+/* Medium devices (desktops, 940px and up) */
+@media (min-width: $screen-md-min) {
+  .ch-date-ok {
+    width: 90%;
+  }
+}
+
+/* Large devices (large desktops, 995px and up) */
+// @media (min-width: $screen-lg-min) { ... }

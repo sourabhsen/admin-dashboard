@@ -1,0 +1,24 @@
+<div class="one-col container-full" ng-controller="GlobalFiltersController as ctrl">
+  <div class="row control-bar">
+    <div class="one-col form-inline">
+      <div class="form-group">
+        <label for="tenant">Tenant:&nbsp;</label>
+        <select name="tenant" id="tenant"  ng-model="ctrl.tenant" class="form-control" ng-options="tenant.name for tenant in ctrl.tenants" ng-change="ctrl.triggerEvent('tenant-change', ctrl.tenant)"></select>
+      </div>
+      <div class="form-group">
+        <label for="timeframe-all">Time frame:&nbsp;</label>
+         <select name="timeframe-all" id="timeframe-all" class="form-control" ng-model="ctrl.timeframe" ng-options="time.name for time in ctrl.timeframes" ng-change="ctrl.triggerEvent('global-date', ctrl.timeframe)">
+        </select>
+      </div>
+      <div class="form-group" ng-class="{'invisible': ctrl.tenant.value !== 'uopx'}">
+        <p>Filters:&nbsp;<a ng-click="ctrl.openFilterModal($event)">{{ctrl.filterStatus}}</a></p>
+      </div>
+     <!--  <div class="form-group">
+        <label for="download-all">Download as: </label>
+        <select name="download" id="download-all" class="form-control">
+          <option value="pdf">PDF</option>
+        </select>
+      </div> -->
+    </div>
+  </div>
+</div>

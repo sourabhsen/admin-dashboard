@@ -1,0 +1,17 @@
+{
+  "name": "angular-ui-validate",
+  "main": "./validate.js",
+  "dependencies": {
+    "angular": ">= 1.0.2"
+  },
+  "homepage": "https://github.com/angular-ui/ui-utils",
+  "_release": "validate-0.1.1",
+  "_resolution": {
+    "type": "tag",
+    "tag": "validate-0.1.1",
+    "commit": "2455e279e163ec9d7eae3f56425219392cc38c79"
+  },
+  "_source": "git://github.com/angular-ui/ui-utils.git",
+  "_target": "validate-0.1.1",
+  "_originalSource": "angular-ui-utils"
+}

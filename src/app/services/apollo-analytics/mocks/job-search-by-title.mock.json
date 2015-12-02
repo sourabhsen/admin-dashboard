@@ -1,0 +1,82 @@
+[
+    {
+        "jobTitle": "JOB TITLE TEST SEARCH",
+        "count": 70
+    },
+    {
+        "jobTitle": "web application developer",
+        "count": 46
+    },
+    {
+        "jobTitle": "java%20developer",
+        "count": 34
+    },
+    {
+        "jobTitle": "javascript%20developer",
+        "count": 23
+    },
+    {
+        "jobTitle": "java consultant",
+        "count": 22
+    },
+    {
+        "jobTitle": "project%20accountant",
+        "count": 19
+    },
+    {
+        "jobTitle": "java%20architect",
+        "count": 17
+    },
+    {
+        "jobTitle": "java%20engineer",
+        "count": 16
+    },
+    {
+        "jobTitle": "java architect",
+        "count": 13
+    },
+    {
+        "jobTitle": "computer%20programmer",
+        "count": 12
+    },
+    {
+        "jobTitle": "java%20consultant",
+        "count": 12
+    },
+    {
+        "jobTitle": "java%20programmer",
+        "count": 12
+    },
+    {
+        "jobTitle": "test pilot",
+        "count": 12
+    },
+    {
+        "jobTitle": "program%20manager",
+        "count": 11
+    },
+    {
+        "jobTitle": "software analyst",
+        "count": 11
+    },
+    {
+        "jobTitle": "software%20analyst",
+        "count": 11
+    },
+    {
+        "jobTitle": "test administrator",
+        "count": 11
+    },
+    {
+        "jobTitle": "computer programmer",
+        "count": 10
+    },
+    {
+        "jobTitle": "java developer",
+        "count": 10
+    },
+    {
+        "jobTitle": "javascript developer",
+        "count": 10
+    }
+]

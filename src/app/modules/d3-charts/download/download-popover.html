@@ -1,0 +1,23 @@
+<div class="ch-download-popover">
+  <h3>{{downloadPopoverOpts.title}}</h3>
+  <a class="modal-close-link" ng-click="hidePopover()" title="Close"><i class="icon"></i></a>
+	<div class="one-col">
+		<div class="row">
+			<div class="col">
+				<select name="export" class="form-control" ng-model="selected" ng-options="item as item.value for item in menu"></select>
+			</div>
+    </div>
+		<div class="row">
+			<div class="two-col ch-download-popover-actions">
+        <div class="row">
+  				<div class="col">
+  					<button class="btn btn-default" ng-click="exportChart($event, selected)">OK</button>
+  				</div>
+  				<div class="col">
+  					<button class="btn btn-default" ng-click="hidePopover()">CANCEL</button>
+  				</div>
+        </div>
+			</div>
+		</div>
+	</div>
+</div>

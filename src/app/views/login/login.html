@@ -1,0 +1,47 @@
+<section class="text-center" ng-controller="LoginController as ctrl" >
+  <!-- Header -->
+  <header class="one-col">
+    <div class="row">
+      <div class="col">
+        <h2 class="font-large">Welcome to the Career Guidance System Analytics Dashboard</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="eight-off-two">
+    <div class="row">
+      <div class="col">
+
+        <form id="loginForm" class="three-col" ng-submit="loginPromise = loginNative()" name="loginForm" novalidate>
+          <alert type="danger" ng-if="server">Invalid Username or Password.</alert>
+          <alert type="danger" ng-if="errorAuth">There was a problem authenticating your user. Please try again.</alert>
+          <alert type="danger" ng-if="errorPermission">This user does not have the right permission. Please login with a different account.</alert>
+
+          <div class="row form-group" show-error>
+            <label for="username" class="col inputLabel">Username:</label>
+            <input id="username" class="col" type="text" name="username" ng-model="formValues.username" ng-class="{'has-server-error': server}" required error-messages>
+          </div>
+
+          <div class="row form-group" show-error>
+            <label for="password" class="col inputLabel">Password:</label>
+            <input id="password" class="col" type="password" name="password" ng-model="formValues.password" ng-class="{'has-server-error': server}" required error-messages>
+          </div>
+
+          <div class="form-group row" show-error>
+            <label for="tenant" class="col inputLabel">Tenant:</label>
+            <select id="tenant" class="col" ng-model="selectedTenant" ng-init="selectedTenant= listTenants[0]" ng-options="opt.name for opt in listTenants"></select>
+          </div>
+
+          <div>
+            <button form="loginForm" type="submit" class="btn btn-large" id="submit" cg-busy="{promise: loginPromise}" trigger-change="#email,#password">Sign In</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+
+</section>

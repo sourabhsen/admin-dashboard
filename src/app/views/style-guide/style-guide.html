@@ -1,0 +1,336 @@
+<style>
+
+  div.styles div.colors dt {
+    height: 60px;
+    width: 100%;
+  }
+
+  div.layouts div.col,
+  div.layouts div.primary,
+  div.layouts div.secondary,
+  div.layouts div.tertiary {
+    background: #ddd;
+    border: 1px solid #000;
+  }
+</style>
+<div class="styles">
+  <h1>Style Guide</h1>
+   <h2>Symbolic</h2>
+    <div class="six-col colors">
+      <dl class="row">
+        <div class="col"><dt class="goals"></dt><dd>$goals</dd></div>
+      </dl>
+      <dl class="row">
+        <div class="col"><dt class="skills"></dt><dd>$skills</dd></div>
+        <div class="col"><dt class="skills-hi"></dt><dd>$skills-hi</dd></div>
+        <div class="col"><dt class="skills-metric"></dt><dd>$skills-metric</dd></div>
+        <div class="col"><dt class="skills-metric-hi"></dt><dd>$skills-metric-hi</dd></div>
+      </dl>
+      <dl class="row">
+        <div class="col"><dt class="resumes"></dt><dd>$resumes</dd></div>
+      </dl>
+      <dl class="row">
+        <div class="col"><dt class="job-search"></dt><dd>$job-search</dd></div>
+        <div class="col"><dt class="job-search-hi"></dt><dd>$job-search-hi</dd></div>
+      </dl>
+      <dl class="row">
+        <div class="col"><dt class="job-app"></dt><dd>$job-app</dd></div>
+        <div class="col"><dt class="job-app-hi"></dt><dd>$job-app-hi</dd></div>
+      </dl>
+    </div>
+    <h2>Brand</h2>
+    <div class="six-col colors">
+      <dl class="row">
+        <div class="col"><dt class="brand-danger"></dt><dd>$brand-danger</dd></div>
+        <div class="col"><dt class="brand-info"></dt><dd>$brand-info</dd></div>
+        <div class="col"><dt class="brand-primary"></dt><dd>$brand-primary</dd></div>
+        <div class="col"><dt class="brand-success"></dt><dd>$brand-success</dd></div>
+        <div class="col"><dt class="brand-warning"></dt><dd>$brand-warning</dd></div>
+      </dl>
+    </div>
+    <h2>Colors</h2>
+    <div class="six-col colors">
+      <dl class="row">
+        <div class="col"><dt class="black"></dt><dd>$black</dd></div>
+        <div class="col"><dt class="white"></dt><dd>$white</dd></div>
+        <div class="col"><dt class="blue"></dt><dd>$blue</dd></div>
+        <div class="col"><dt class="blue-darker"></dt><dd>$blue-darker</dd></div>
+        <div class="col"><dt class="blue-darkest"></dt><dd>$blue-darkest</dd></div>
+        <div class="col"><dt class="blue-light"></dt><dd>$blue-light</dd></div>
+        <div class="col"><dt class="blue-lightest"></dt><dd>$blue-lightest</dd></div>
+        <div class="col"><dt class="green"></dt><dd>$green</dd></div>
+        <div class="col"><dt class="green-light"></dt><dd>$green-light</dd></div>
+        <div class="col"><dt class="lime"></dt><dd>$lime</dd></div>
+        <div class="col"><dt class="lime-darker"></dt><dd>$lime-darker</dd></div>
+        <div class="col"><dt class="orange"></dt><dd>$orange</dd></div>
+        <div class="col"><dt class="orange-light"></dt><dd>$orange-light</dd></div>
+        <div class="col"><dt class="red"></dt><dd>$red</dd></div>
+        <div class="col"><dt class="gray"></dt><dd>$gray</dd></div>
+        <div class="col"><dt class="gray-dark"></dt><dd>$gray-dark</dd></div>
+        <div class="col"><dt class="gray-darker"></dt><dd>$gray-darker</dd></div>
+        <div class="col"><dt class="gray-light"></dt><dd>$gray-light</dd></div>
+        <div class="col"><dt class="gray-lighter"></dt><dd>$gray-lighter</dd></div>
+        <div class="col"><dt class="gray-lightest"></dt><dd>$gray-lightest</dd></div>
+      </dl>
+    </div>
+</div>
+<div>
+  <h1>Fonts</h1>
+  <h1>h1 or $font-size-h1</h1>
+  <h2>h2 or $font-size-h2</h2>
+  <h3>h3 or $font-size-h3</h3>
+  <h4>h4 or $font-size-h4</h4>
+  <h5>h5 or $font-size-h5</h5>
+  <h6>h6 or $font-size-h6</h6>
+  <p>Paragraph Text</p>
+  <span class="mini-header">mini-header class</span>
+</div>
+<div>
+  <h1>Components</h1>
+  <p>See "src/styles/_components.scss" for global CSS for common html structures, like: Page headers, status bars, buttons, etc.</p>
+</div>
+<div>
+  <h1>Icons</h1>
+  <p>TODO: add implementation details when icons are ready to use.</p>
+<!--   <p>Find the icon you'd like to use in the "assets/images/to-sprite/icons-all" directory. Use &lt;span class="icon icon-{file-Name w/o file extension}"&gt;&lt;/span&gt; to display the icon.</p> -->
+</div>
+<div class="layouts">
+  <h1>Grid Layouts</h1>
+  <h2>Even Column Layouts</h2>
+  <h3>Use layout classes below on parent elements, followed by a .row wrapper element, followed by the class .col content elements.</h3>
+
+  <strong>one-col</strong>
+  <section class="one-col">
+    <div class="row">
+      <div class="col">
+        col
+      </div>
+    </div>
+  </section>
+
+  <strong>two-col</strong>
+  <section class="two-col">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <strong>three-col</strong>
+  <section class="three-col">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <strong>four-col</strong>
+  <section class="four-col">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <strong>five-col</strong>
+  <section class="five-col">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <strong>six-col</strong>
+  <section class="six-col">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <h2>Uneven Column Layouts</h2>
+  <h3>These layouts define larger and smaller columns that can be arranged in any order to equal 12.</h3>
+  <h3>Use layout classes on parent elements, followed by a .row wrapper element, followed by the class .primary or .secondary on content elements.</h3>
+
+  <strong>two-five</strong>
+  <p>Used on login.html and registration.html</p>
+  <section class="two-five">
+    <div class="row">
+      <div class="primary">primary</div>
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+    </div>
+  </section>
+
+  <strong>three-four-five</strong>
+  <p>Used on table view of Career Exploration</p>
+  <section class="three-four-five">
+    <div class="row">
+      <div class="tertiary">tertiary</div>
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+    </div>
+  </section>
+
+  <strong>two-three-seven</strong>
+  <section class="two-three-seven">
+    <div class="row">
+      <div class="tertiary">tertiary</div>
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+    </div>
+  </section>
+
+  <strong>one-four-seven</strong>
+  <p></p>
+  <section class="one-four-seven">
+    <div class="row">
+      <div class="tertiary">tertiary</div>
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+    </div>
+  </section>
+
+  <strong>one-five-six</strong>
+  <p>Used on dashboard milestones</p>
+  <section class="one-five-six">
+    <div class="row">
+      <div class="tertiary">tertiary</div>
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+    </div>
+  </section>
+
+  <strong>five-seven</strong>
+  <p>Used on dashboard progress</p>
+  <section class="five-seven">
+    <div class="row">
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+    </div>
+  </section>
+
+  <strong>three-six</strong>
+  <section class="three-six">
+    <div class="row">
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+      <div class="secondary">secondary</div>
+    </div>
+  </section>
+
+  <strong>one-ten</strong>
+  <section class="one-ten">
+    <div class="row">
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+      <div class="secondary">secondary</div>
+    </div>
+  </section>
+
+  <strong>one-eleven</strong>
+  <section class="one-eleven">
+    <div class="row">
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+    </div>
+  </section>
+
+  <strong>two-eight</strong>
+  <section class="two-eight">
+    <div class="row">
+      <div class="secondary">secondary</div>
+      <div class="primary">primary</div>
+      <div class="secondary">secondary</div>
+    </div>
+  </section>
+
+  <strong>six-three</strong>
+  <section class="six-three">
+    <div class="row">
+      <div class="primary">primary</div>
+      <div class="secondary">secondary</div>
+      <div class="secondary">secondary</div>
+    </div>
+  </section>
+
+  <strong>four-eight</strong>
+  <section class="four-eight">
+    <div class="row">
+      <div class="primary">primary</div>
+      <div class="secondary">secondary</div>
+    </div>
+  </section>
+
+  <strong>three-nine</strong>
+  <section class="three-nine">
+    <div class="row">
+      <div class="primary">primary</div>
+      <div class="secondary">secondary</div>
+    </div>
+  </section>
+
+  <hr>
+  <h2>Offset Layouts</h2>
+  <h3>These layouts are offsets for centering content.</h3>
+  <h3>Use layout classes below on parent elements, followed by a .row wrapper element, followed by the class .col content elements.</h3>
+
+  <strong>six-off-three</strong>
+  <section class="six-off-three">
+    <div class="row">
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <strong>eight-off-two</strong>
+  <section class="eight-off-two">
+    <div class="row">
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <strong>ten-off-one</strong>
+  <section class="ten-off-one">
+    <div class="row">
+      <div class="col">col</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <h2>Nested Layouts</h2>
+  <h3>Layouts can be nested to the extent of the page size, collapsing will occur if there is not enough room.</h3>
+
+  <strong>two-col with a six-off-three on left and two-col on right</strong>
+  <section class="two-col">
+    <div class="row">
+      <div class="col">
+        <div class="six-off-three">
+          <div class="row">
+            <div class="col">col</div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="two-col">
+          <div class="row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

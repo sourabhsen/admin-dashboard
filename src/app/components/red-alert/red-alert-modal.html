@@ -1,0 +1,26 @@
+<div class="modal-wrapper">
+  <h2>At Risk Students</h2>
+  <button class="modal-close-link" ng-click="closeThisDialog()"><i class="icon"></i></button>
+  <div class="one-col" cg-busy="ctrl.studentPromise">
+    <div class="row" ng-if="!ctrl.students.length">
+      <div class="col">
+        <div  class="d3-chart-message" ng-attr-style="width:{{config.width}}px; height: {{config.height}}px;">
+         <div class="message-holder">
+            <div class="message">
+               <h3 >No data available</h3><p>Please try a different date range or filter.</p>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ul>
+          <li ng-repeat="student in ctrl.students">
+            <p>Student IRN: {{student.irn}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

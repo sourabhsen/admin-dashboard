@@ -1,0 +1,33 @@
+.d3-area {
+  line.gridline {
+    stroke: $gray-light;
+  }
+  .volume path {
+    opacity: .25;
+  }
+  .line path, circle {
+    fill: none;
+    stroke-width: 2px;
+  }
+  .dot circle {
+    fill: $white;
+  }
+  .tick {
+    font-size: 11px;
+  }
+  .axis {
+    path {
+      fill: $gray-dark;
+    }
+  }
+  .interactiveLine{
+    line{
+      stroke-dasharray: 3;
+      opacity: 0.5;
+    }
+  }
+  .focus-overlay {
+    fill: none;
+    pointer-events: all;
+  }
+}

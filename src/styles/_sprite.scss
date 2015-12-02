@@ -1,0 +1,795 @@
+%svg-common {
+	background: url(../images/sprite.svg) no-repeat;
+}
+
+.icon-add {
+	@extend %svg-common;
+	background-position: 73.93364928909952% 64.6376811594203%;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-add-goal {
+	@extend %svg-common;
+	background-position: 58.392434988179666% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-alert {
+	@extend %svg-common;
+	background-position: 56.73076923076923% 71.6374269005848%;
+	width: 28px;
+	height: 25px;
+}
+
+.icon-alert-off {
+	@extend %svg-common;
+	background-position: 86.6822429906542% 52.14899713467049%;
+	width: 16px;
+	height: 18px;
+}
+
+.icon-alert-on {
+	@extend %svg-common;
+	background-position: 93.69158878504673% 52.14899713467049%;
+	width: 16px;
+	height: 18px;
+}
+
+.icon-arrow-back {
+	@extend %svg-common;
+	background-position: 97.19626168224299% 46.875%;
+	width: 16px;
+	height: 15px;
+}
+
+.icon-arrow-next {
+	@extend %svg-common;
+	background-position: 93.45794392523365% 46.875%;
+	width: 16px;
+	height: 15px;
+}
+
+.icon-back-circle {
+	@extend %svg-common;
+	background-position: 0 62.11180124223603%;
+	width: 45px;
+	height: 45px;
+}
+
+.icon-back-square {
+	@extend %svg-common;
+	background-position: 63.356973995271865% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-bubble-bl {
+	@extend %svg-common;
+	background-position: 100% 0;
+	width: 176px;
+	height: 86px;
+}
+
+.icon-bubble-r {
+	@extend %svg-common;
+	background-position: 0 40.780141843971634%;
+	width: 223px;
+	height: 85px;
+}
+
+.icon-bubble-tr {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 268px;
+	height: 115px;
+}
+
+.icon-calendar {
+	@extend %svg-common;
+	background-position: 100% 51.70454545454545%;
+	width: 15px;
+	height: 15px;
+}
+
+.icon-chat {
+	@extend %svg-common;
+	background-position: 26.41509433962264% 64.6376811594203%;
+	width: 20px;
+	height: 22px;
+}
+
+.icon-check-lg {
+	@extend %svg-common;
+	background-position: 33.8235294117647% 72.27138643067846%;
+	width: 36px;
+	height: 28px;
+}
+
+.icon-check-sm {
+	@extend %svg-common;
+	background-position: 99.06976744186046% 68.82022471910112%;
+	width: 14px;
+	height: 11px;
+}
+
+.icon-checkbox {
+	@extend %svg-common;
+	background-position: 68.32151300236407% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-checkbox-done {
+	@extend %svg-common;
+	background-position: 82.97872340425532% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-close {
+	@extend %svg-common;
+	background-position: 79.14691943127963% 64.6376811594203%;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-close-tool {
+	@extend %svg-common;
+	background-position: 84.36018957345972% 64.6376811594203%;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-collapse {
+	@extend %svg-common;
+	background-position: 54.716981132075475% 91.64265129682997%;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-collapse-filter {
+	@extend %svg-common;
+	background-position: 75.34883720930233% 90.08498583569406%;
+	width: 14px;
+	height: 14px;
+}
+
+.icon-company {
+	@extend %svg-common;
+	background-position: 89.74358974358974% 47.00854700854701%;
+	width: 15px;
+	height: 16px;
+}
+
+.icon-delete {
+	@extend %svg-common;
+	background-position: 59.353348729792145% 51.40449438202247%;
+	width: 11px;
+	height: 11px;
+}
+
+.icon-delete02 {
+	@extend %svg-common;
+	background-position: 63.981042654028435% 64.6376811594203%;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-download {
+	@extend %svg-common;
+	background-position: 88.52459016393442% 64.26512968299711%;
+	width: 17px;
+	height: 20px;
+}
+
+.icon-dropdown {
+	@extend %svg-common;
+	background-position: 98.38337182448036% 71.70868347338936%;
+	width: 11px;
+	height: 10px;
+}
+
+.icon-duplicate {
+	@extend %svg-common;
+	background-position: 78.06603773584905% 57.80346820809248%;
+	width: 20px;
+	height: 21px;
+}
+
+.icon-edit {
+	@extend %svg-common;
+	background-position: 50.11764705882353% 91.64265129682997%;
+	width: 19px;
+	height: 20px;
+}
+
+.icon-edit-title {
+	@extend %svg-common;
+	background-position: 90% 52.14899713467049%;
+	width: 14px;
+	height: 18px;
+}
+
+.icon-expand {
+	@extend %svg-common;
+	background-position: 93.16037735849056% 64.26512968299711%;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-expand-filter {
+	@extend %svg-common;
+	background-position: 72.09302325581395% 90.08498583569406%;
+	width: 14px;
+	height: 14px;
+}
+
+.icon-fast-forward {
+	@extend %svg-common;
+	background-position: 73.28605200945627% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-feedback {
+	@extend %svg-common;
+	background-position: 73.88235294117646% 52.14899713467049%;
+	width: 19px;
+	height: 18px;
+}
+
+.icon-flag {
+	@extend %svg-common;
+	background-position: 100% 46.742209631728045%;
+	width: 12px;
+	height: 14px;
+}
+
+.icon-geo {
+	@extend %svg-common;
+	background-position: 96.52777777777777% 52%;
+	width: 12px;
+	height: 17px;
+}
+
+.icon-goals {
+	@extend %svg-common;
+	background-position: 0 85.24096385542168%;
+	width: 35px;
+	height: 35px;
+}
+
+.icon-info {
+	@extend %svg-common;
+	background-position: 59.43396226415094% 91.64265129682997%;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-jobs {
+	@extend %svg-common;
+	background-position: 8.557457212713937% 85.24096385542168%;
+	width: 35px;
+	height: 35px;
+}
+
+.icon-level-advanced {
+	@extend %svg-common;
+	background-position: 6.6339066339066335% 74.24242424242425%;
+	width: 37px;
+	height: 37px;
+}
+
+.icon-level-beginner {
+	@extend %svg-common;
+	background-position: 24.815724815724817% 74.24242424242425%;
+	width: 37px;
+	height: 37px;
+}
+
+.icon-level-intermediate {
+	@extend %svg-common;
+	background-position: 15.724815724815725% 74.24242424242425%;
+	width: 37px;
+	height: 37px;
+}
+
+.icon-list {
+	@extend %svg-common;
+	background-position: 41.70616113744076% 64.6376811594203%;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-marker-next {
+	@extend %svg-common;
+	background-position: 11.138613861386139% 58.13953488372093%;
+	width: 40px;
+	height: 23px;
+}
+
+.icon-marker-start {
+	@extend %svg-common;
+	background-position: 55.75% 46.51162790697674%;
+	width: 44px;
+	height: 23px;
+}
+
+.icon-more {
+	@extend %svg-common;
+	background-position: 64% 91.37931034482759%;
+	width: 19px;
+	height: 19px;
+}
+
+.icon-move {
+	@extend %svg-common;
+	background-position: 98.86363636363636% 57.636887608069166%;
+	width: 4px;
+	height: 20px;
+}
+
+.icon-nav-advance {
+	@extend %svg-common;
+	background-position: 69.12114014251782% 52.14899713467049%;
+	width: 23px;
+	height: 18px;
+}
+
+.icon-nav-advance-active {
+	@extend %svg-common;
+	background-position: 63.657957244655584% 52.14899713467049%;
+	width: 23px;
+	height: 18px;
+}
+
+.icon-nav-coverletter {
+	@extend %svg-common;
+	background-position: 16.152019002375297% 64.6376811594203%;
+	width: 23px;
+	height: 22px;
+}
+
+.icon-nav-coverletter-active {
+	@extend %svg-common;
+	background-position: 10.688836104513063% 64.6376811594203%;
+	width: 23px;
+	height: 22px;
+}
+
+.icon-nav-dashboard {
+	@extend %svg-common;
+	background-position: 35.25179856115108% 57.80346820809248%;
+	width: 27px;
+	height: 21px;
+}
+
+.icon-nav-dashboard-active {
+	@extend %svg-common;
+	background-position: 41.726618705035975% 57.80346820809248%;
+	width: 27px;
+	height: 21px;
+}
+
+.icon-nav-gameplan {
+	@extend %svg-common;
+	background-position: 55.269320843091336% 64.6376811594203%;
+	width: 17px;
+	height: 22px;
+}
+
+.icon-nav-gameplan-active {
+	@extend %svg-common;
+	background-position: 59.250585480093676% 64.6376811594203%;
+	width: 17px;
+	height: 22px;
+}
+
+.icon-nav-goals {
+	@extend %svg-common;
+	background-position: 11.666666666666666% 92.71137026239067%;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-nav-goals-active {
+	@extend %svg-common;
+	background-position: 39.76190476190476% 92.71137026239067%;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-nav-image {
+	@extend %svg-common;
+	background-position: 86.69833729216153% 71.22093023255815%;
+	width: 23px;
+	height: 23px;
+}
+
+.icon-nav-image-active {
+	@extend %svg-common;
+	background-position: 81.23515439429929% 71.22093023255815%;
+	width: 23px;
+	height: 23px;
+}
+
+.icon-nav-interview {
+	@extend %svg-common;
+	background-position: 100% 82.74853801169591%;
+	width: 23px;
+	height: 25px;
+}
+
+.icon-nav-interview-active {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 23px;
+	height: 25px;
+}
+
+.icon-nav-jobs {
+	@extend %svg-common;
+	background-position: 47.74346793349169% 57.80346820809248%;
+	width: 23px;
+	height: 21px;
+}
+
+.icon-nav-jobs-active {
+	@extend %svg-common;
+	background-position: 53.20665083135392% 57.80346820809248%;
+	width: 23px;
+	height: 21px;
+}
+
+.icon-nav-network {
+	@extend %svg-common;
+	background-position: 50.83532219570406% 83.72781065088758%;
+	width: 25px;
+	height: 29px;
+}
+
+.icon-nav-network-active {
+	@extend %svg-common;
+	background-position: 63.0071599045346% 83.72781065088758%;
+	width: 25px;
+	height: 29px;
+}
+
+.icon-nav-resgoals {
+	@extend %svg-common;
+	background-position: 46.588235294117645% 64.6376811594203%;
+	width: 19px;
+	height: 22px;
+}
+
+.icon-nav-resgoals-active {
+	@extend %svg-common;
+	background-position: 51.05882352941177% 64.6376811594203%;
+	width: 19px;
+	height: 22px;
+}
+
+.icon-nav-resume {
+	@extend %svg-common;
+	background-position: 91.29411764705883% 71.22093023255815%;
+	width: 19px;
+	height: 23px;
+}
+
+.icon-nav-resume-active {
+	@extend %svg-common;
+	background-position: 95.76470588235294% 71.22093023255815%;
+	width: 19px;
+	height: 23px;
+}
+
+.icon-nav-searchapply {
+	@extend %svg-common;
+	background-position: 69.7841726618705% 71.22093023255815%;
+	width: 27px;
+	height: 23px;
+}
+
+.icon-nav-searchapply-active {
+	@extend %svg-common;
+	background-position: 63.30935251798561% 71.22093023255815%;
+	width: 27px;
+	height: 23px;
+}
+
+.icon-nav-settings {
+	@extend %svg-common;
+	background-position: 28.333333333333332% 92.71137026239067%;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-nav-settings-active {
+	@extend %svg-common;
+	background-position: 22.61904761904762% 92.71137026239067%;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-nav-skills {
+	@extend %svg-common;
+	background-position: 45.26066350710901% 92.71137026239067%;
+	width: 22px;
+	height: 24px;
+}
+
+.icon-nav-skills-active {
+	@extend %svg-common;
+	background-position: 17.298578199052134% 92.71137026239067%;
+	width: 22px;
+	height: 24px;
+}
+
+.icon-nav-tools-goals {
+	@extend %svg-common;
+	background-position: 44.73684210526316% 83.72781065088758%;
+	width: 26px;
+	height: 29px;
+}
+
+.icon-nav-tools-goals-active {
+	@extend %svg-common;
+	background-position: 75.35885167464114% 83.72781065088758%;
+	width: 26px;
+	height: 29px;
+}
+
+.icon-nav-tools-interview {
+	@extend %svg-common;
+	background-position: 69.13875598086125% 83.72781065088758%;
+	width: 26px;
+	height: 29px;
+}
+
+.icon-nav-tools-interview-active {
+	@extend %svg-common;
+	background-position: 56.9377990430622% 83.72781065088758%;
+	width: 26px;
+	height: 29px;
+}
+
+.icon-nav-tools-jobs {
+	@extend %svg-common;
+	background-position: 94.48441247002398% 83.23529411764706%;
+	width: 27px;
+	height: 27px;
+}
+
+.icon-nav-tools-jobs-active {
+	@extend %svg-common;
+	background-position: 88.00959232613909% 83.23529411764706%;
+	width: 27px;
+	height: 27px;
+}
+
+.icon-nav-tools-main {
+	@extend %svg-common;
+	background-position: 28.087167070217916% 57.971014492753625%;
+	width: 31px;
+	height: 22px;
+}
+
+.icon-nav-tools-main-active {
+	@extend %svg-common;
+	background-position: 20.581113801452783% 57.971014492753625%;
+	width: 31px;
+	height: 22px;
+}
+
+.icon-nav-tools-military {
+	@extend %svg-common;
+	background-position: 34.04761904761905% 92.71137026239067%;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-nav-tools-military-active {
+	@extend %svg-common;
+	background-position: 5.9523809523809526% 92.71137026239067%;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-nav-tools-resume {
+	@extend %svg-common;
+	background-position: 81.57894736842105% 83.72781065088758%;
+	width: 26px;
+	height: 29px;
+}
+
+.icon-nav-tools-resume-active {
+	@extend %svg-common;
+	background-position: 38.516746411483254% 83.72781065088758%;
+	width: 26px;
+	height: 29px;
+}
+
+.icon-nav-tools-skills {
+	@extend %svg-common;
+	background-position: 42.130750605326874% 72.27138643067846%;
+	width: 31px;
+	height: 28px;
+}
+
+.icon-nav-tools-skills-active {
+	@extend %svg-common;
+	background-position: 49.63680387409201% 72.27138643067846%;
+	width: 31px;
+	height: 28px;
+}
+
+.icon-next-circle {
+	@extend %svg-common;
+	background-position: 55.88972431077694% 35.714285714285715%;
+	width: 45px;
+	height: 45px;
+}
+
+.icon-next-square {
+	@extend %svg-common;
+	background-position: 87.94326241134752% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-pdf {
+	@extend %svg-common;
+	background-position: 56.20608899297424% 52.285714285714285%;
+	width: 17px;
+	height: 17px;
+}
+
+.icon-preview {
+	@extend %svg-common;
+	background-position: 0 92.71137026239067%;
+	width: 25px;
+	height: 24px;
+}
+
+.icon-record {
+	@extend %svg-common;
+	background-position: 99.72602739726027% 29.86111111111111%;
+	width: 79px;
+	height: 79px;
+}
+
+.icon-remove-goal {
+	@extend %svg-common;
+	background-position: 97.87234042553192% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-resume {
+	@extend %svg-common;
+	background-position: 25.240384615384617% 84.73053892215569%;
+	width: 28px;
+	height: 33px;
+}
+
+.icon-rewind {
+	@extend %svg-common;
+	background-position: 92.90780141843972% 57.80346820809248%;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-ribbon {
+	@extend %svg-common;
+	background-position: 77.01149425287356% 31.73431734317343%;
+	width: 96px;
+	height: 96px;
+}
+
+.icon-save {
+	@extend %svg-common;
+	background-position: 82.82352941176471% 52.14899713467049%;
+	width: 19px;
+	height: 18px;
+}
+
+.icon-saved {
+	@extend %svg-common;
+	background-position: 78.3529411764706% 52.14899713467049%;
+	width: 19px;
+	height: 18px;
+}
+
+.icon-search {
+	@extend %svg-common;
+	background-position: 97.87735849056604% 64.08045977011494%;
+	width: 20px;
+	height: 19px;
+}
+
+.icon-searchapply {
+	@extend %svg-common;
+	background-position: 17.114914425427873% 85.24096385542168%;
+	width: 35px;
+	height: 35px;
+}
+
+.icon-settings {
+	@extend %svg-common;
+	background-position: 36.492890995260666% 64.6376811594203%;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-skills {
+	@extend %svg-common;
+	background-position: 31.971153846153847% 84.73053892215569%;
+	width: 28px;
+	height: 33px;
+}
+
+.icon-symbol-computer {
+	@extend %svg-common;
+	background-position: 21.513002364066192% 64.6376811594203%;
+	width: 21px;
+	height: 22px;
+}
+
+.icon-symbol-edu {
+	@extend %svg-common;
+	background-position: 68.86792452830188% 64.6376811594203%;
+	width: 20px;
+	height: 22px;
+}
+
+.icon-symbol-globe {
+	@extend %svg-common;
+	background-position: 75.71428571428571% 71.22093023255815%;
+	width: 24px;
+	height: 23px;
+}
+
+.icon-symbol-time {
+	@extend %svg-common;
+	background-position: 52.2248243559719% 52.285714285714285%;
+	width: 17px;
+	height: 17px;
+}
+
+.icon-symbol-tool {
+	@extend %svg-common;
+	background-position: 68.47058823529412% 91.37931034482759%;
+	width: 19px;
+	height: 19px;
+}
+
+.icon-symbol-tuition {
+	@extend %svg-common;
+	background-position: 0 74.46808510638297%;
+	width: 27px;
+	height: 38px;
+}
+
+.icon-symbol-video {
+	@extend %svg-common;
+	background-position: 86.05200945626477% 47.00854700854701%;
+	width: 21px;
+	height: 16px;
+}
+
+.icon-tile {
+	@extend %svg-common;
+	background-position: 31.27962085308057% 64.6376811594203%;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-title {
+	@extend %svg-common;
+	background-position: 78.42227378190255% 89.83050847457628%;
+	width: 13px;
+	height: 13px;
+}
+

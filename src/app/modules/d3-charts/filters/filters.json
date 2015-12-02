@@ -1,0 +1,25 @@
+[
+  {
+    "param"   : "programSchool",
+    "title"   : "Program",
+    "options" : [
+      "Education",
+      "Nursing and Health Care",
+      "Business and Management",
+      "Human Services",
+      "Technology"
+    ]
+  },
+  {
+    "param"   : "programDegree",
+    "title"   : "Degree",
+    "options" : [
+      "Undergraduate Certificate",
+      "Associates",
+      "Bachelors",
+      "Graduate Certificate",
+      "Masters",
+      "Doctoral"
+    ]
+  }
+]

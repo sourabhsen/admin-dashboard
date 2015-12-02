@@ -1,0 +1,65 @@
+<div class="modal-wrapper">
+  <h2>Date Range</h2>
+  <button class="modal-close-link" ng-click="closeThisDialog()"><i class="icon"></i></button>
+  <div class="ten-two">
+    <div class="row">
+      <div class="primary">
+       <form class="form-inline">
+         <div class="two-col container-full">
+         <!-- INPUTS -->
+           <div class="row">
+           <!-- FROM DATE -->
+            <div class="col">
+              <div class="form-group ch-date-form-group">
+                <label for="from">From&nbsp;</label>
+                <div class="input-group">
+                  <input type="text" class="form-control daterangepicker" id="from" ng-model="ctrl.config.dates.range.from.picker" ng-required autofocus placeholder="MM/DD/YYYY">
+                  <span class="input-group-addon">
+                    <i class="icon icon-calendar"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="ch-datepicker">
+                <datepicker ng-model="ctrl.config.dates.range.from.picker"
+                            min-date="ctrl.config.dates.min"
+                            max-date="ctrl.config.dates.max"
+                            show-weeks="false"
+                            format-year="YYYY"></datepicker>
+              </div>
+            </div>
+            <!-- TO DATE -->
+            <div class="col">
+              <div class="form-group ch-date-form-group">
+                <label for="to">To&nbsp;</label>
+                <div class="input-group">
+                  <input type="text" name="toDate" class="form-control daterangepicker" id="to" ng-model="ctrl.config.dates.range.to.picker" ng-required placeholder="MM/DD/YYYY">
+                  <span class="input-group-addon">
+                    <i class="icon icon-calendar"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="ch-datepicker">
+                <datepicker ng-model="ctrl.config.dates.range.to.picker"
+                            min-date="ctrl.config.dates.min"
+                            max-date="ctrl.config.dates.max"
+                            show-weeks="false"
+                            format-year="YYYY"></datepicker>
+              </div>
+            </div>
+           </div>
+         </div>
+       </form>
+      </div>
+       <div class="secondary">
+        <div class="row">
+           <button class="btn btn-primary ch-date-ok" ng-click="ctrl.selectDateRange(ctrl.config.dates.range.from.picker, ctrl.config.dates.range.to.picker)">Okay</button>
+        </div>
+        <div class="row">
+            <button ng-click="closeThisDialog()" class="ch-date-cancel" title="Cancel">Cancel</button>
+           <!-- <a >CANCEL</a> -->
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+

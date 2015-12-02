@@ -1,0 +1,16 @@
+.ch-info {
+  float:right;
+  margin: 0 7.5px;
+}
+
+.ns-popover-info-theme {
+	box-sizing: border-box;
+  border: solid 5px #D5D6D2;
+  z-index: 999;
+	background: $popover-bg;
+  width: 260px;
+
+  .icon-close{
+    margin-top:17px;
+  }
+}

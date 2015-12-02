@@ -1,0 +1,23 @@
+{
+  "name": "jspath",
+  "version": "0.3.2",
+  "main": "lib/jspath.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "benchmarks",
+    "test",
+    "Makefile",
+    "package.json"
+  ],
+  "homepage": "https://github.com/dfilatov/jspath",
+  "_release": "0.3.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.2",
+    "commit": "f0f9714a3a660d404d1b43cd10b670a8c9f08ddc"
+  },
+  "_source": "git://github.com/dfilatov/jspath.git",
+  "_target": "~0.3.0",
+  "_originalSource": "jspath"
+}

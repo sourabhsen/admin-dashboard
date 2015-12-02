@@ -1,0 +1,25 @@
+<div class="five-col">
+  <div class="row flatten metric-container" ng-class="{'smaller-count' : countFlag, 'smaller-trend' : trendFlag, 'smaller-unique' : uniqueFlag  }">
+    <div ng-repeat="metric in metrics" class="col" >
+      <div class="metric-widget bg-transparent text-left widget-{{metric.metricName | kebabcase | lowercase}}">
+        <div class="metric-widget-body">
+          <div class="metric-widget-header">{{metric.metricName}}</div>
+          <div class="metric-widget-icon pull-right">
+            <i class="icon icon-{{metric.metricName | lowercase | kebabcase}}-logo"></i>
+          </div>
+          <div class="metric-count" ng-class="{'smaller': metric.count > 9999, 'smallest': metric.count > 999999}">{{metric.count | number:0}}</div>
+          <div class="metric-widget-trend" ng-if="isNumber(metric.change)">
+            <i class="fa fa-play" ng-class="{'fa-rotate-270': metric.changedirection === 'up' ,'fa-rotate-90': metric.changedirection === 'down' }"></i>
+            <span class="comment" ng-class="{'smaller': metric.change > 999}"><em ng-class="{'smaller': metric.change > 99}">{{metric.change | number:0}}%&nbsp;</em>from previous&nbsp;{{metric.diff}}</span>
+          </div>
+          <div class="metric-widget-trend no-data" ng-if="!isNumber(metric.change)">
+            <span> Trending data not available</span>
+          </div>
+        </div>
+        <div class="metric-widget-footer">
+          <span class="metric-unique-user"><em ng-class="{'smaller': metric.uniqueCount > 9999, 'smallest': metric.uniqueCount > 999999}">{{metric.uniqueCount | number:0}}</em> Unique Users</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

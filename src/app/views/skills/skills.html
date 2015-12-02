@@ -1,0 +1,63 @@
+<main ng-controller="SkillsController as ctrl" id="skills-page" class="skills-page">
+  <article class="one-col">
+
+    <!-- HEADER -->
+    <div class="row site-header">
+      <div class="col">
+       <header class="ten-two container-full">
+         <div class="row">
+           <div class="primary">
+              <h1 class="site-tag">Career Guidance System Analytics Dashboard<strong>&nbsp;Skills</strong></h1>
+              <h5>Last updated at {{ctrl.lastRunDate}}</h5>
+           </div>
+           <div class="secondary ov-user">
+            <p>Welcome {{ctrl.name}}<a ui-sref="logout">Logout</a></p>
+           </div>
+         </div>
+       </header>
+      </div>
+    </div>
+    <!-- CONTROL BAR -->
+    <div class="row">
+      <div class="col">
+        <global-filters></global-filters>
+      </div>
+    </div>
+    <!-- TOP SKILLS -->
+    <div class="row">
+      <div class="col container-full">
+        <div class="three-col container-full">
+          <div class="row">
+            <div class="col" cg-busy="ctrl.topSkillsBeginnerPromise">
+              <d3-chart id="top-skills-beginner" config="ctrl.topSkillsBeginner">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+            <div class="col" cg-busy="ctrl.topSkillsIntermediatePromise">
+              <d3-chart id="top-skills-intermediate" config="ctrl.topSkillsIntermediate">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+            <div class="col" cg-busy="ctrl.topSkillsAdvancedPromise">
+              <d3-chart id="top-skills-advanced" config="ctrl.topSkillsAdvanced">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-chart-search></d3-chart-search>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>

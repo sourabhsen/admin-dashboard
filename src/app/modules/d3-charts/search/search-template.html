@@ -1,0 +1,18 @@
+<section class="one-col ch-search">
+  <div class="row flatten">
+    <div class="col">
+      <form class="form" role="search">
+        <div class="form-group has-feedback">
+          <label for="search" class="sr-only">Search</label>
+          <input type="text" class="form-control"
+            ng-model="searchQuery" placeholder="Search"
+            typeahead="option for option in getResults($viewValue)"
+            typeahead-on-select='onSelect($model)'
+            typeahead-min-length="2" typeahead-focus-first="false"
+            typeahead-editable="true">
+            <span class="form-control-feedback"><a ng-click="searchfilter()" class="icon icon-search"></a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
